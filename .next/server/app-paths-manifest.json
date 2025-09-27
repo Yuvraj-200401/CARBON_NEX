@@ -1,0 +1,7 @@
+{
+  "/dashboard/my-tokens/page": "app/dashboard/my-tokens/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/projects/page": "app/dashboard/projects/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js"
+}

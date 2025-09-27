@@ -3,8 +3,8 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/dashboards/ui/avatar';
+import { Button } from '@/components/dashboards/ui/button';
 import {
   Sidebar,
   SidebarBody,
@@ -12,7 +12,7 @@ import {
   SidebarItem,
   SidebarSection,
   useSidebar,
-} from '@/components/ui/sidebar';
+} from '@/components/dashboards/ui/sidebar';
 import { CarboNexLogo } from './icons';
 import {
   LayoutGrid,

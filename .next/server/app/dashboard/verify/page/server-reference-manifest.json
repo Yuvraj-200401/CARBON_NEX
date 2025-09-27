@@ -1,0 +1,16 @@
+{
+  "node": {
+    "60be2fc0ce02fe99375725137acba7233dfdfd18bc": {
+      "workers": {
+        "app/dashboard/verify/page": {
+          "moduleId": "[project]/.next-internal/server/app/dashboard/verify/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/dashboard/verify/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

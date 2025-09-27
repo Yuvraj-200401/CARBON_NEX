@@ -2,8 +2,8 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/dashboards/ui/avatar';
+import { Button } from '@/components/dashboards/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,8 +11,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+} from '@/components/dashboards/ui/dropdown-menu';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/dashboards/ui/sheet';
 import { CarboNexLogo } from './icons';
 import {
   Bell,
@@ -23,7 +23,7 @@ import {
   Settings,
   LogOut,
 } from 'lucide-react';
-import { useSidebar } from './ui/sidebar';
+import { useSidebar } from './dashboards/ui/sidebar';
 
 interface DashboardHeaderProps {
   user: { name: string; email: string };

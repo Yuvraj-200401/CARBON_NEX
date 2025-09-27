@@ -2,10 +2,10 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { getProjects, updateProjectStatus, subscribe, Project } from '@/lib/demo-data';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/dashboards/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/dashboards/ui/card';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/dashboards/ui/table';
+import { Badge } from '@/components/dashboards/ui/badge';
 import { toast } from '@/hooks/use-toast';
 import { motion } from 'framer-motion';
 

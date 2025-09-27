@@ -1,8 +1,8 @@
 
 'use client';
 import { useState, useEffect } from 'react';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/dashboards/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/dashboards/ui/card";
 import { getProjects, removeProject, subscribe, Project } from '@/lib/demo-data';
 import Image from 'next/image';
 import { toast } from '@/hooks/use-toast';

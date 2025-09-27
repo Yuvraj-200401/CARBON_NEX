@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getProjects, Project, subscribe } from '@/lib/demo-data';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/dashboards/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/dashboards/ui/card';
 import Image from 'next/image';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@/components/dashboards/ui/badge';
 import { PlusCircle, List } from 'lucide-react';
 import { motion } from 'framer-motion';
 

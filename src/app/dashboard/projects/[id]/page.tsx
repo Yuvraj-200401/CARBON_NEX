@@ -4,9 +4,9 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { getProjectById, updateProjectStatus, Project, subscribe } from '@/lib/demo-data';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/dashboards/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/dashboards/ui/card';
+import { Badge } from '@/components/dashboards/ui/badge';
 import Image from 'next/image';
 import { ArrowLeft, Award, ShoppingCart } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
@@ -163,7 +163,7 @@ export default function ProjectDetailPage() {
                 {/* Right Column */}
                 <div className="w-full lg:w-2/3 space-y-8">
                     
-                    {project.verification && (
+                    {project.verification.verification && (
                         <Card>
                             <CardHeader>
                                 <CardTitle>AI Verification Report</CardTitle>
@@ -171,12 +171,12 @@ export default function ProjectDetailPage() {
                             <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex flex-col items-center justify-center p-6 bg-muted rounded-lg">
                                     <p className="text-muted-foreground">Verification Score</p>
-                                    <p className="text-5xl font-bold text-primary">{project.verification.verificationScore}%</p>
+                                    <p className="text-5xl font-bold text-primary">{project.verification.verification.verificationScore}%</p>
                                 </div>
                                 <div className="space-y-4">
-                                    <p><strong>Guideline Compliance:</strong> {project.verification.guidelineCompliance}</p>
-                                    <p><strong>Anomaly Risk:</strong> {project.verification.anomalyRisk}</p>
-                                    <p><strong>Completeness:</strong> {project.verification.completenessPct}%</p>
+                                    <p><strong>Guideline Compliance:</strong> {project.verification.verification.guidelineCompliance}</p>
+                                    <p><strong>Anomaly Risk:</strong> {project.verification.verification.anomalyRisk}</p>
+                                    <p><strong>Completeness:</strong> {project.verification.verification.completenessPct}%</p>
                                 </div>
                             </CardContent>
                         </Card>

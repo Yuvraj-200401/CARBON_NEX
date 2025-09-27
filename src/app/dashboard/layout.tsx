@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { DashboardHeader } from '@/components/dashboard-header';
 import { DashboardSidebar } from '@/components/dashboard-sidebar';
-import { SidebarProvider } from '@/components/ui/sidebar';
-import { Skeleton } from '@/components/ui/skeleton';
+import { SidebarProvider } from '@/components/dashboards/ui/sidebar';
+import { Skeleton } from '@/components/dashboards/ui/skeleton';
 
 export default function DashboardLayout({
   children,

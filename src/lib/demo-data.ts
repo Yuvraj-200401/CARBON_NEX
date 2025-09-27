@@ -12,7 +12,7 @@ export type Project = {
     area_ha: number;
     date: string; // ISO string
     imageUrl?: string;
-    verification?: VerificationResult['verification'];
+    verification: VerificationResult;
     prediction?: VerificationResult['prediction'];
 }
 
@@ -67,7 +67,7 @@ function saveData() {
 
 export function subscribe(listener: () => void) {
     listeners.add(listener);
-    return () => listeners.delete(listener);
+    return () => { listeners.delete(listener); };
 }
 
 export function getProjects(): Project[] {
@@ -84,7 +84,7 @@ export function addProject(projectData: Omit<Project, 'id' | 'status' | 'date'> 
         id: `proj_${Date.now()}`,
         status: 'Pending',
         date: new Date().toISOString(),
-        verification: projectData.verification.verification,
+        verification: projectData.verification,
         prediction: projectData.verification.prediction,
         imageUrl: projectData.imageUrl
     };

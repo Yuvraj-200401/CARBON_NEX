@@ -1,7 +1,7 @@
 
 'use client';
 import { useRouter } from 'next/navigation';
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/dashboards/ui/button";
 import { CarboNexLogo } from '@/components/icons';
 import { useToast } from '@/hooks/use-toast';
 import { ShieldCheck, ShoppingBag, Users, Building, Leaf } from 'lucide-react';

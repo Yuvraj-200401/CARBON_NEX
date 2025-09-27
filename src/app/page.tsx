@@ -1,13 +1,11 @@
 
 'use client';
 import Link from 'next/link';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/dashboards/ui/button';
 import { ArrowRight, CheckCircle, Database, Waves } from 'lucide-react';
 import { CarboNexLogo } from '@/components/icons';
 import { motion } from 'framer-motion';
-import { WavyBackground } from '@/components/ui/wavy-background';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { WavyBackground } from '@/components/dashboards/ui/wavy-background';
 
 const stats = [
     { value: '1M+', label: 'CO₂ Verified (t)', description: 'Tons of CO₂ equivalent verified and tokenized through our platform.' },

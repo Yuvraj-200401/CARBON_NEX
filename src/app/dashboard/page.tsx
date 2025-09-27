@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import NGOOverview from '@/components/dashboards/ngo-overview';
 import VerifierDashboard from '@/components/dashboards/verifier-dashboard';
 import BuyerDashboard from '@/components/dashboards/buyer-dashboard';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@/components/dashboards/ui/skeleton';
 
 export default function DashboardRootPage() {
   const [role, setRole] = useState<string | null>(null);
